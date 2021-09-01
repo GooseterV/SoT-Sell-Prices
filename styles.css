@@ -140,5 +140,13 @@ h1 {
   background-color: transparent;
 }
 
+.tbl-desc {
+  background-color: transparent;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  color: rgba(36, 174, 216, 0.863);
+}
+
 
 
