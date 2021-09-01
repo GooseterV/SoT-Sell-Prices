@@ -1,0 +1,140 @@
+@import "https://fonts.googleapis.com/css2?family=Quicksand&display=swap";
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px;
+}
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.rwd-table th {
+  display: none;
+}
+.rwd-table td {
+  display: block;
+}
+.rwd-table td:first-child {
+  padding-top: .5em;
+}
+.rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .rwd-table td:before {
+    display: none;
+  }
+}
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+body {
+  padding: 0 2em;
+  font-family: Quicksand, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: rgb(0, 0, 0);
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #34495E;
+}
+
+.rwd-table {
+  background: #393939;
+  color: #fff;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 24.5%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%); 
+  overflow: auto;
+}
+.rwd-table tr {
+  border-color: #393939;
+}
+.rwd-table th, .rwd-table td {
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    padding: 1em !important;
+  }
+}
+.rwd-table th, .rwd-table td:before {
+  color: #3877c0;
+}
+
+.topheader {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  position: absolute; 
+  top: 0; 
+  right: 0;
+  width: 100%;
+  background: #144552;
+  color: #fff;
+}
+
+.topheader a {
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.topheader a:hover {
+  color: black;
+}
+
+.tbltopheader {
+  color: rgba(36, 174, 216, 0.863);
+  position: absolute;
+  font-size: 55px;
+  text-decoration: none;
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #0c3864;
+    background-size: cover;
+	border-radius: 10px;
+}
+::-webkit-scrollbar {
+	background-color: #061638;
+	width: 15px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #fff;
+	background: linear-gradient(155deg,#1f8583,#114855,#01272c);
+    border-radius: 10px;
+    background-size: cover;
+}
+
+
+
