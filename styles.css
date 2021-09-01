@@ -136,5 +136,9 @@ h1 {
     background-size: cover;
 }
 
+.empty-space {
+  background-color: transparent;
+}
+
 
 
