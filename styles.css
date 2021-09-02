@@ -48,10 +48,10 @@
     padding: .25em .5em;
   }
   .rwd-table th:first-child, .rwd-table td:first-child {
-    padding-left: 0;
+    padding-left: 1em;
   }
   .rwd-table th:last-child, .rwd-table td:last-child {
-    padding-right: 0;
+    padding-right: 1em;
   }
 }
 
