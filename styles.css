@@ -23,20 +23,25 @@
 .rwd-table td:last-child {
   padding-bottom: .5em;
 }
+
+.rwd-table th, .rwd-table td {
+  text-align: left;
+}
+
 .rwd-table td:before {
   content: attr(data-th) ": ";
   font-weight: bold;
   width: 6.5em;
   display: inline-block;
 }
+
+
 @media (min-width: 480px) {
   .rwd-table td:before {
     display: none;
   }
 }
-.rwd-table th, .rwd-table td {
-  text-align: left;
-}
+
 @media (min-width: 480px) {
   .rwd-table th, .rwd-table td {
     display: table-cell;
@@ -47,6 +52,24 @@
   }
   .rwd-table th:last-child, .rwd-table td:last-child {
     padding-right: 0;
+  }
+}
+
+@media (min-width: 480px) {
+  .rwd-table th, .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
 
@@ -82,11 +105,7 @@ h1 {
 .rwd-table th, .rwd-table td {
   margin: .5em 1em;
 }
-@media (min-width: 480px) {
-  .rwd-table th, .rwd-table td {
-    padding: 1em !important;
-  }
-}
+
 
 .rwd-table th, .rwd-table td:before {
   color: #3877c0;
@@ -158,4 +177,54 @@ html {
   cursor: url('src/fish_cursor.png'), auto !important;
 }
 
+.sotbutton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #3877c0;
+  background-color: #393939;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 35px;
+  transform: translate(-50%, -50%); 
+  text-decoration: none;
+}
 
+.sotbutton a:hover {
+  color: black;
+}
+
+.sotbutton span a{
+  text-decoration: none;
+  color: #3877c0;
+}
+
+@media (min-width: 480px) {
+  .sotbutton {
+    font-size: 22px;
+    top: 65%;
+  }
+}
+
+@media (min-width: 1090px) {
+  .sotbutton {
+    font-size: 40px;
+    top: 50%;
+  }
+}
+
+.tbl-desc-bubble {
+  background-color: rgba(36, 174, 216, 0.863);
+  color: white;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 23px;
+  border-radius: 30px;
+  display: none;
+}
