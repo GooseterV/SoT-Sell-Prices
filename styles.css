@@ -153,24 +153,5 @@ html {
   cursor: url('src/fish_cursor.png'), auto !important;
 }
 
-@media (min-width: 64em) {
-  body {
-    font-size: 1.2em;
-  }
-}
-@media (min-width: 85.375em) {
-  body {
-    font-size: 1.3em;
-  }
-}
-@media (min-width: 120em) {
-  body {
-    font-size: 1.4em;
-  }
-}
-@media (min-width: 160em) {
-  body {
-    font-size: 1.6em;
-  }
-}
+div { width: 100%; height: 100%; }
 
