@@ -5,7 +5,7 @@
   margin-bottom: 4em;
   margin-left: 0;
   margin-right: 0;
-  min-width: 150px;
+  min-width: 300px;
 }
 .rwd-table tr {
   border-top: 1px solid #ddd;
@@ -61,17 +61,7 @@
   }
 }
 
-@media (orientation: portrait) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-}
+
 
 body {
   padding: 0 2em;
@@ -232,5 +222,14 @@ html {
 @media screen and (orientation:portrait) {
   .rwd-table {
     top: 50%;
+  }
+}
+
+@media (orientation: portrait) {
+  .tbltopheader {
+    display: none;
+  }
+  body {
+    padding: 0%;
   }
 }
