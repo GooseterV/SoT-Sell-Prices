@@ -172,17 +172,20 @@ html {
   justify-content: center;
   padding: 0.7rem 2rem;
   font-family: "Quicksand", sans-serif;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 40px;
   text-align: center;
   text-decoration: none;
   color: #3877c0;
   background-color: #393939;
   backface-visibility: hidden;
-  border: 0.3rem solid transparent;
+  border: 0.67rem solid transparent;
   border-radius: 35px;
   transform: translate(-50%, -50%); 
   text-decoration: none;
+  position: absolute;
+  width: 15%;
+  height: 30%;
 }
 
 .sotbutton a:hover {
@@ -207,6 +210,17 @@ html {
     top: 50%;
   }
 }
+@media screen and (orientation:portrait) {
+  .sotbutton {
+    top: 50%;
+    font-size: 15px;
+    width: 3%;
+    height: 7%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 25%;
+  }
+}
 
 .tbl-desc-bubble {
   background-color: rgba(36, 174, 216, 0.863);
@@ -222,10 +236,8 @@ html {
   .rwd-table {
     border-radius: 60px;
   }
-}
-
-@media (orientation: portrait) {
   .tbltopheader {
     display: none;
   }
+
 }
